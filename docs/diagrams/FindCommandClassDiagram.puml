@@ -16,7 +16,7 @@ FindCommandParser ..> FindCommand : creates >
 FindCommandParser ..> XYZContainsKeywordsPredicate : creates >
 Predicate <|.left. XYZContainsKeywordsPredicate
 
-FindCommand o- "0..*" XYZContainsKeywordsPredicate
+FindCommand o-- "0..*" XYZContainsKeywordsPredicate
 
 XYZContainsKeywordsPredicate ..> LevenshteinDistanceChecker
 note left: Only DescriptionContainsKeywordsPredicate \nand TitleContainsKeywordsPredicate depends \non LevenshteinDistanceChecker
